@@ -1,0 +1,21 @@
+span{
+	font-size: large;
+}
+body{
+    background-color: aquamarine;
+}
+h1{
+    color: red;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #460ee0;
+padding: 10px;
+float: none;
+text-align: left;
+}
+#send{
+    width: 40%;
+}
