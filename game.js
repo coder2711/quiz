@@ -35,3 +35,36 @@ function done(){
     document.getElementById("1").value="";
     document.getElementById("2").value="";
 }
+
+question_turn = "player_1";
+answer_turn = "player_2"
+function Check(){
+   input = document.getElementById("answer").value;
+   if(input == answer){
+       if(answer_turn == "player_1"){
+           score_player_1 = score_player_1 +1;
+           document.getElementById("player_1_score").innerHTML=score_player_1;
+       }
+       else{
+           score_player_2 = score_player_2+1;
+           document.getElementById("player_2_score").innerHTML=score_player_2;
+       }
+       }
+       if(question_turn == "player_1"){
+           question_turn = "player_2";
+           document.getElementById("Question_turn").innerHTML="Question Turn : "+player2;
+       }
+       else{
+        question_turn = "player_1";
+        document.getElementById("Question_turn").innerHTML="Question Turn : "+player1;
+       }
+
+       if(answer_turn == "player_1"){
+           answer_turn = "player_2";
+           document.getElementById("Answer_turn").innerHTML= "Answer Turn : "+player2;
+       }
+       else{
+        answer_turn = "player_1";
+        document.getElementById("Answer_turn").innerHTML= "Answer Turn : "+player1;
+       }
+    }
